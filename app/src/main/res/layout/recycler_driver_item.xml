@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recItem"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+
+         <com.google.android.material.imageview.ShapeableImageView
+             android:id="@+id/recDriverImage"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_alignParentTop="true"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="20dp"
+             android:padding="8dp"
+             android:src="@drawable/img_driver"
+             app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+         <TextView
+             android:id="@+id/tv0"
+             android:layout_width="100dp"
+             android:layout_height="30dp"
+             android:layout_alignParentTop="true"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="38dp"
+             android:layout_toEndOf="@+id/recDriverImage"
+             android:text="driver-name"
+             android:textColor="@color/black"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/tv1"
+             android:layout_width="150dp"
+             android:layout_height="30dp"
+             android:layout_alignParentTop="true"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="38dp"
+             android:layout_toEndOf="@+id/tv0"
+             android:text="num-passengers"
+             android:textColor="@color/black"
+             android:textSize="20sp" />
+
+         <Button
+             android:id="@+id/btnRequestRide"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv0"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentEnd="true"
+             android:layout_marginStart="125dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginEnd="125dp"
+             android:layout_marginBottom="8dp"
+             android:backgroundTint="@color/PeachPuff"
+             android:text="Request"
+             android:textColor="@color/black"
+             app:cornerRadius="30dp" />
+
+     </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

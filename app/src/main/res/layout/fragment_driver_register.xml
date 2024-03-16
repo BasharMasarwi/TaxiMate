@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.taximate.login.DriverRegisterFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="30dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/peach_border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="20dp"
+                    android:text="Register"
+                    android:textAlignment="center"
+                    android:textColor="@color/DarkPeach"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Upload your driver's license:"
+                    android:textAlignment="center"
+                    android:textColor="@color/DarkPeach"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/ivUploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:contentDescription="upload image"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_upload" />
+
+                <EditText
+                    android:id="@+id/etDriverRegName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/peach_border"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="8dp"
+                    android:elevation="20dp"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/PeachPuff" />
+
+                <EditText
+                    android:id="@+id/etDriverRegEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/peach_border"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawablePadding="8dp"
+                    android:elevation="20dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/PeachPuff" />
+
+                <EditText
+                    android:id="@+id/etDriverRegPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/peach_border"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="8dp"
+                    android:elevation="20dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="15dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/PeachPuff" />
+
+                <EditText
+                    android:id="@+id/etDriverRegPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/peach_border"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="8dp"
+                    android:elevation="20dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/PeachPuff" />
+
+                <EditText
+                    android:id="@+id/etDriverRegConfPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/peach_border"
+                    android:drawableStart="@drawable/ic_password"
+                    android:drawablePadding="8dp"
+                    android:elevation="20dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/PeachPuff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Now enter your car info"
+                    android:textAlignment="center"
+                    android:textColor="@color/DarkPeach"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etCarModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/peach_border"
+                    android:drawableStart="@drawable/ic_car"
+                    android:drawablePadding="8dp"
+                    android:elevation="20dp"
+                    android:hint="Car Model"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/PeachPuff" />
+
+                <EditText
+                    android:id="@+id/etPassenger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/peach_border"
+                    android:drawableStart="@drawable/ic_passengers"
+                    android:drawablePadding="8dp"
+                    android:elevation="20dp"
+                    android:hint="Number of Passengers"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/PeachPuff" />
+
+                <Button
+                    android:id="@+id/btnDriverRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:elevation="20dp"
+                    android:padding="15dp"
+                    android:text="Register"
+                    android:textSize="16sp"
+                    app:cornerRadius="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:elevation="20dp"
+                        android:text="Already have an account?"
+                        android:textColor="@color/DarkPeach"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDriverLoginClickable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:elevation="20dp"
+                        android:text="Login"
+                        android:textColor="@color/Teal"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
